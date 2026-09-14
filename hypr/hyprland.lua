@@ -391,7 +391,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("kitty")
     hl.exec_cmd("noctalia")
     hl.exec_cmd("fcitx5 -d")
-    hl.exec_cmd("mpvpaper -o 'loop no-audio input-ipc-server=/tmp/mpvsocket' ALL ~/Videos/Wallpapers/lagtrain.mp4")
+    hl.exec_cmd("sleep 1 && mpvpaper -o 'loop no-audio input-ipc-server=/tmp/mpvsocket' ALL ~/Videos/Wallpapers/lagtrain.mp4")
     hl.exec_cmd("mpvpaper-stop --socket-path /tmp/mpvsocket --fork")
 
 end)
