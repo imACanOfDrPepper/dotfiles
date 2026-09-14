@@ -234,8 +234,6 @@ hl.bind("SUPER" .. " + " .. "SPACE", hl.dsp.exec_cmd("noctalia msg panel-toggle 
 
 hl.bind("Print", hl.dsp.exec_cmd("flameshot gui"))
 
-hl.bind("SUPER" .. " + " .. "F1", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call plugin:keybind-cheatsheet toggle"))
-
 -- Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
 
 hl.bind(mainMod .. " + " .. "T", hl.dsp.exec_cmd("kitty"))
@@ -393,7 +391,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("kitty")
     hl.exec_cmd("noctalia")
     hl.exec_cmd("fcitx5 -d")
-    hl.exec_cmd("mpvpaper -o 'loop no-audio input-ipc-server=/tmp/mpvsocket' DP-3 ~/Videos/Wallpapers/lagtrain.mp4")
+    hl.exec_cmd("mpvpaper -o 'loop no-audio input-ipc-server=/tmp/mpvsocket' ALL ~/Videos/Wallpapers/lagtrain.mp4")
     hl.exec_cmd("mpvpaper-stop --socket-path /tmp/mpvsocket --fork")
 
 end)
