@@ -37,15 +37,8 @@
 -- See https://wiki.hypr.land/Configuring/Monitors/
 
 hl.monitor({
-    output   = "DP-3",
+    output   = "ALL",
     mode     = "2560x1440@180",
-    position = "auto",
-    scale    = "auto",
-})
-
-hl.monitor({
-    output   = "",
-    mode     = "preferred",
     position = "auto",
     scale    = "auto",
 })
@@ -235,10 +228,6 @@ hl.device({
 
 local mainMod = "SUPER"
 
--- Sets "Windows" key as main modifier
-
-local ipc = "qs -c noctalia-shell ipc call"
-
 -- Core binds
 
 hl.bind("SUPER" .. " + " .. "SPACE", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
@@ -402,7 +391,9 @@ hl.window_rule({
 -- Autostart
 hl.on("hyprland.start", function()
     hl.exec_cmd("kitty")
-    hl.exec_cmd("qs -c noctalia-shell")
+    hl.exec_cmd("noctalia")
     hl.exec_cmd("fcitx5 -d")
-    hl.exec_cmd('mpvpaper -o "loop no-audio" DP-3 ~/Videos/Wallpapers/lagtrain.mp4')
+    hl.exec_cmd("mpvpaper -o 'loop no-audio input-ipc-server=/tmp/mpvsocket' DP-3 ~/Videos/Wallpapers/lagtrain.mp4")
+    hl.exec_cmd("mpvpaper-stop --socket-path /tmp/mpvsocket --fork")
+
 end)
