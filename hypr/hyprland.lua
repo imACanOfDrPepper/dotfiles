@@ -402,3 +402,5 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("mpvpaper-stop --socket-path /tmp/mpvsocket --fork")
 
 end)
+
+
