@@ -16,6 +16,9 @@
     "mShadow": "#000000",
     "mHover": "#000000",
     "mOnHover": "#ffffff",
-      }
+    "terminal": {
+      "normal": {},
+      "bright": {}
+    }
   }
 }
