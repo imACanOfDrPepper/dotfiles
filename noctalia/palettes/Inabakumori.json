@@ -1,4 +1,6 @@
 {
+  "_comment": "Warning! This theme does not include terminal colors.",
+
   "dark": {
     "mPrimary": "#dddddd",
     "mOnPrimary": "#000000",
@@ -6,11 +8,11 @@
     "mOnSecondary": "#000000",
     "mTertiary": "#ffffff",
     "mOnTertiary": "#000000",
-    "mError": "#ff9999",
+    "mError": "#ff7777",
     "mOnError": "#ffffff",
     "mSurface": "#333333",
     "mOnSurface": "#ffffff",
-    "mSurfaceVariant": "#111111",
+    "mSurfaceVariant": "#222222",
     "mOnSurfaceVariant": "#ffffff",
     "mOutline": "#ffffff",
     "mShadow": "#000000",
