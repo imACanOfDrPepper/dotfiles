@@ -239,7 +239,7 @@ local mainMod = "SUPER"
 
 hl.bind("SUPER" .. " + " .. "SPACE", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
 
-hl.bind("Print", hl.dsp.exec_cmd("flameshot gui"))
+hl.bind("Print", hl.dsp.exec_cmd("sh -c \"grim -g '$(slurp)' - | swappy -f -\""))
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
 
@@ -402,6 +402,3 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("mpvpaper-stop --socket-path /tmp/mpvsocket --fork")
 
 end)
-
-
-
