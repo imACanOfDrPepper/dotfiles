@@ -247,7 +247,7 @@ hl.bind(mainMod .. " + " .. "T", hl.dsp.exec_cmd("kitty"))
 
 hl.bind(mainMod .. " + " .. "C", hl.dsp.window.close())
 
-hl.bind(mainMod .. " + " .. "M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit"))
+hl.bind(mainMod .. " + " .. "M", hl.dsp.exit())
 
 hl.bind(mainMod .. " + " .. "E", hl.dsp.exec_cmd("dolphin"))
 
