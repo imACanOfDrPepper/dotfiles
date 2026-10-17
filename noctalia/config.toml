@@ -32,7 +32,7 @@ order = [ "default" ]
     concave_edge_corners = true
     contact_shadow = false
     enabled = true
-    end = [ "media", "tray", "notifications", "clipboard", "volume", "control-center", "session" ]
+    end = [ "media", "notifications", "volume", "session" ]
     font_scale = 1.0
     font_weight = 500
     hover_highlight = true
@@ -53,7 +53,7 @@ order = [ "default" ]
     shadow = true
     show_on_workspace_switch = true
     smart_auto_hide = false
-    start = [ "launcher", "wallpaper", "workspaces" ]
+    start = [ "workspaces" ]
     thickness = 34
     widget_spacing = 10
 
@@ -526,7 +526,7 @@ time_format = "{:%H:%M}"
     polkit_placement = "floating"
     polkit_position = "center"
     session_placement = "attached"
-    session_position = "auto"
+    session_position = "center"
     shadow = true
     transparency_mode = "solid"
     wallpaper_placement = "attached"
@@ -538,7 +538,7 @@ time_format = "{:%H:%M}"
     screen_filter_regex = ""
 
     [shell.screen_corners]
-    enabled = false
+    enabled = true
     size = 32
 
     [shell.screenshot]
@@ -778,3 +778,6 @@ type = "spacer"
 [widget.temp]
 stat = "cpu_temp"
 type = "sysmon"
+
+[widget.tray]
+enabled = false
