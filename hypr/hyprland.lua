@@ -239,7 +239,7 @@ local subMod = "SUPER"
 
 -- Core binds
 
-hl.bind("SUPER" .. " + " .. "SPACE", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
+hl.bind(mainMod .. " + " .. "SPACE", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
 
 hl.bind("Print", hl.dsp.exec_cmd("sh -c \"grim -g '$(slurp)' - | swappy -f -\""))
 
