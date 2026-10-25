@@ -11,3 +11,5 @@ done
 sleep 0.5
 
 noctalia msg brightness-set $current_brightness > /dev/null
+
+sleep 0.25
