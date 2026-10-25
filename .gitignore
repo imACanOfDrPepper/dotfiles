@@ -5,6 +5,7 @@
 !/nvim/
 !/tmux/
 !/hypr/
-!/noctalia/
 !/ly/
 !/systemd/
+!/amane/
+/amane/target/
