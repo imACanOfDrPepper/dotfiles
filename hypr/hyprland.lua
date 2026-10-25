@@ -134,8 +134,8 @@ hl.config({
         allow_tearing = false,
         layout = "dwindle",
         col = {
-            active_border = { colors = { "rgba(33ccffee)", "rgba(00ff99ee)" }, angle = 45 },
-            inactive_border = "rgba(595959aa)",
+            active_border = { colors = { "rgba(ff00c1cc)", "rgba(9600ffcc)", "rgba(4900ffcc)" }, angle = 45 },
+            inactive_border = "rgba(59595999)",
         },
     },
 })
@@ -209,6 +209,7 @@ hl.config({
         kb_layout = "pl",
         follow_mouse = 1,
         sensitivity = 0,
+        kb_options = "caps:hyper",
         -- -1.0 - 1.0, 0 means no modification.
         touchpad = {
             natural_scroll = true,
@@ -233,7 +234,8 @@ hl.device({
 
 -- See https://wiki.hypr.land/Configuring/Keywords/
 
-local mainMod = "SUPER"
+local mainMod = "MOD3"
+local subMod = "SUPER"
 
 -- Core binds
 
@@ -287,31 +289,31 @@ hl.bind(mainMod .. " + " .. 0, hl.dsp.focus({ workspace = 10 }))
 
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. 1, hl.dsp.window.move({ workspace = 1 }))
+hl.bind(subMod .. " + " .. " + " .. 1, hl.dsp.window.move({ workspace = 1 }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. 2, hl.dsp.window.move({ workspace = 2 }))
+hl.bind(subMod .. " + " .. " + " .. 2, hl.dsp.window.move({ workspace = 2 }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. 3, hl.dsp.window.move({ workspace = 3 }))
+hl.bind(subMod .. " + " .. " + " .. 3, hl.dsp.window.move({ workspace = 3 }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. 4, hl.dsp.window.move({ workspace = 4 }))
+hl.bind(subMod .. " + " .. " + " .. 4, hl.dsp.window.move({ workspace = 4 }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. 5, hl.dsp.window.move({ workspace = 5 }))
+hl.bind(subMod .. " + " .. " + " .. 5, hl.dsp.window.move({ workspace = 5 }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. 6, hl.dsp.window.move({ workspace = 6 }))
+hl.bind(subMod .. " + " .. " + " .. 6, hl.dsp.window.move({ workspace = 6 }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. 7, hl.dsp.window.move({ workspace = 7 }))
+hl.bind(subMod .. " + " .. " + " .. 7, hl.dsp.window.move({ workspace = 7 }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. 8, hl.dsp.window.move({ workspace = 8 }))
+hl.bind(subMod .. " + " .. " + " .. 8, hl.dsp.window.move({ workspace = 8 }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. 9, hl.dsp.window.move({ workspace = 9 }))
+hl.bind(subMod .. " + " .. " + " .. 9, hl.dsp.window.move({ workspace = 9 }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. 0, hl.dsp.window.move({ workspace = 10 }))
+hl.bind(subMod .. " + " .. " + " .. 0, hl.dsp.window.move({ workspace = 10 }))
 
 -- Example special workspace (scratchpad)
 
 hl.bind(mainMod .. " + " .. "S", hl.dsp.workspace.toggle_special("magic"))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "S", hl.dsp.window.move({ workspace = "special:magic" }))
+hl.bind(subMod .. " + " .. " + " .. "S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll through existing workspaces with mainMod + scroll
 
