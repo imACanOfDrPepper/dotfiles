@@ -4,3 +4,4 @@ SETUVAR --export GTK_IM_MODULE:fcitx
 SETUVAR --export QT_IM_MODULE:fcitx
 SETUVAR --export XMODIFIERS:\x40im\x3dfcitx
 SETUVAR __fish_initialized:4300
+SETUVAR fish_user_paths:/home/prohaker/\x2ecargo/bin
