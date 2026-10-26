@@ -239,7 +239,7 @@ local subMod = "SUPER"
 
 -- Core binds
 
-hl.bind(mainMod .. " + " .. "SPACE", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
+hl.bind(mainMod .. " + " .. "SPACE", hl.dsp.exec_cmd("/home/prohaker/.cargo/bin/amane ipc call toggle-launcher"))
 
 hl.bind("Print", hl.dsp.exec_cmd("sh -c \"grim -g '$(slurp)' - | swappy -f -\""))
 
