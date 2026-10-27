@@ -243,6 +243,8 @@ hl.bind(mainMod .. " + " .. "SPACE", hl.dsp.exec_cmd("/home/prohaker/.cargo/bin/
 
 hl.bind(mainMod .. " + " .. "L", hl.dsp.exec_cmd("/home/prohaker/.cargo/bin/amane ipc call lock-screen"))
 
+hl.bind(mainMod .. " + " .. "N", hl.dsp.exec_cmd("/home/prohaker/.cargo/bin/amane ipc call clear-notifs"))
+
 hl.bind("Print", hl.dsp.exec_cmd("sh -c \"grim -g '$(slurp)' - | swappy -f -\""))
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
