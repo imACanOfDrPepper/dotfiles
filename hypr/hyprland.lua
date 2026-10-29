@@ -402,7 +402,7 @@ hl.window_rule({
 -- Autostart
 hl.on("hyprland.start", function()
     hl.exec_cmd("kitty")
-    hl.exec_cmd("amane run")
+    hl.exec_cmd("AMANE_SCALE_FACTOR=1.33 amane run")
     hl.exec_cmd("fcitx5 -d")
     hl.exec_cmd("sleep 1 && mpvpaper -o 'loop no-audio input-ipc-server=/tmp/mpvsocket' ALL ~/Videos/Wallpapers/lagtrain.mp4")
     hl.exec_cmd("mpvpaper-stop --socket-path /tmp/mpvsocket --fork")
