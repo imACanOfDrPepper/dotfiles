@@ -401,6 +401,8 @@ hl.window_rule({
     float = true,
 })
 
+hl.layer_rule({ match = { namespace = "amane-desktop-widget" }, blur = true })
+
 -- Autostart
 hl.on("hyprland.start", function()
     hl.exec_cmd("kitty")
