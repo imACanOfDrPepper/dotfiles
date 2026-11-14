@@ -1,7 +1,0 @@
-[Unit]
-Description=Hourly Water Reminder
-
-[Service]
-Type=oneshot
-Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
-ExecStart=notify-send -a "Water Reminder" -u critical "Hydration time!" "Drink water, you're not a cactus :3"
