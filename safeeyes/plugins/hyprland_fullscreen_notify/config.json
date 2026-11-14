@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "name": "Hyprland Fullscreen Notify",
+        "description": "Use notify-send instead of locking the screen when playing games or in fullscreen on Hyprland.",
+        "author": "Custom",
+        "version": "1.0.0"
+    },
+    "dependencies": {
+        "operating_systems": ["Linux"],
+        "desktop_environments": [],
+        "python_modules": [],
+        "resources": [],
+        "shell_commands": ["hyprctl", "notify-send"]
+    },
+    "settings": []
+}
