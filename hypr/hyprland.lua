@@ -91,8 +91,6 @@ hl.env("XCURSOR_SIZE", 24)
 
 hl.env("HYPRCURSOR_SIZE", 24)
 
-hl.env("AMANE_SCALE_FACTOR", 1.33)
-
 --##################
 
 --## PERMISSIONS ###
