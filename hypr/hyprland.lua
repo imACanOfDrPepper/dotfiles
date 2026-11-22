@@ -399,7 +399,7 @@ hl.window_rule({
     float = true,
 })
 
-hl.layer_rule({ match = { namespace = "amane-desktop-widget" }, blur = true })
+hl.layer_rule({ match = { namespace = "inaba-desktop-widget" }, blur = true })
 
 -- Autostart
 hl.on("hyprland.start", function()
