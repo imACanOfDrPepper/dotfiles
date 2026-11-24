@@ -7,6 +7,7 @@ GAMING_KEYWORDS = [
         "steam_app_",
         "gamescope",
         "minecraft",
+        "lichess",
         ]
 
 def should_use_notification():
