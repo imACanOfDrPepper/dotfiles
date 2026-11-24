@@ -134,6 +134,7 @@ require("lazy").setup({
             },
           },
         })
+        lsp_config("clangd", {})
         lsp_config("pyright", {})
         lsp_config("rust_analyzer", {})
         lsp_config("gopls", {})
