@@ -1,0 +1,39 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "modules": [
+    {"type": "title", "format": "────────── {#bold_light_blue}Welcome, {user-name}@{host-name} :3{#} ──────────"},
+    {"type": "custom", "format": "{#bold_blue}System Info:{#}"},
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "break",
+    {"type": "custom", "format": "{#bold_blue}Desktop Info:{#}"},
+    "shell",
+    "terminal",
+    "wm",
+    "break",
+    {"type": "custom", "format": "{#bold_blue}Hardware Info:{#}"},
+    "cpu",
+    "gpu",
+    "memory",
+    "display",
+    "disk",
+    "break",
+    { "type": "colors", "symbol": "circle" }
+  ],
+  "display": {
+    "key": {
+      "type": "both"
+    }
+  },
+  "logo": {
+    "type": "kitty-icat",
+    "source": "~/.config/fastfetch/nyarch.png",
+    "width": 46,
+    "height": 23,
+    "padding": {
+      "left": 1
+    }
+  }
+}
