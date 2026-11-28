@@ -38,7 +38,7 @@
                 "unfullscreen": true,
                 "while_on_battery": false
             },
-            "version": "0.0.2"
+            "version": "0.0.3"
         },
         {
             "enabled": true,
